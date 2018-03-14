@@ -1,0 +1,10 @@
+<h1>Restaurants</h1>
+
+<% @restaurants.each do |restau| %>
+<%= link_to restau.name, restaurant_path(restau) %>
+<% end %>
+
+
+<form action="/restaurants/new">
+  <input type="submit" class="btn btn-primary" value="Create new">
+</form>
